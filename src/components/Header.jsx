@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import '../styles/Header.css'
-import logo from '../assets/logo-gb.jpeg'
+import logo from '../assets/logo-gb.webp'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -19,9 +19,6 @@ const Header = () => {
           <ul>
             <li>
               <a href="#inicio">Inicio</a>
-            </li>
-            <li>
-              <a href="#nosotros">Nosotros</a>
             </li>
             <li>
               <a href="#servicios">Servicios</a>

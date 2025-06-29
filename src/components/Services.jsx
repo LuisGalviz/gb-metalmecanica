@@ -1,12 +1,11 @@
 import '../styles/Services.css'
-import corteLaserImg from '../assets/maquina-corte-laser.jpeg'
+import corteLaserImg from '../assets/maquina-corte-laser.webp'
 
 const Services = () => {
   const services = [
     {
       title: 'Diseño y Desarrollo',
-      description:
-        'Diseño y desarrollo de proyectos industriales personalizados',
+      description: 'Diseño y desarrollo de proyectos industriales personalizados',
       features: [
         'Diseño CAD',
         'Desarrollo de proyectos',
@@ -17,28 +16,16 @@ const Services = () => {
     {
       title: 'Fabricación y Corte Láser',
       description: 'Fabricación y corte con láser de alta precisión',
-      features: [
-        'Corte láser',
-        'Fabricación metálica',
-        'Alta precisión',
-        'Control de calidad',
-      ],
+      features: ['Corte láser', 'Fabricación metálica', 'Alta precisión', 'Control de calidad'],
     },
     {
       title: 'Soldadura y Ensamblaje',
-      description:
-        'Proceso de soldadura profesional y ensamblaje de estructuras',
-      features: [
-        'Soldadura especializada',
-        'Ensamblaje',
-        'Acero inoxidable',
-        'Aluminio',
-      ],
+      description: 'Proceso de soldadura profesional y ensamblaje de estructuras',
+      features: ['Soldadura especializada', 'Ensamblaje', 'Acero inoxidable', 'Aluminio'],
     },
     {
       title: 'Instalación y Mantenimiento',
-      description:
-        'Instalación y mantenimiento preventivo, correctivo y reparación',
+      description: 'Instalación y mantenimiento preventivo, correctivo y reparación',
       features: [
         'Instalación profesional',
         'Mantenimiento preventivo',

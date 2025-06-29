@@ -1,24 +1,19 @@
 import '../styles/Clients.css'
+import olimpicaLogo from '../assets/clients/olimpica.webp'
+import cajacapiLogo from '../assets/clients/Cajacopi-logo.webp'
+import buenaVistaLogo from '../assets/clients/buena-vista-logo.webp'
+import combarranquillaLogo from '../assets/clients/combarranquilla-logo.webp'
+import hotelBqLogo from '../assets/clients/hotel-bq-plaza-logo.webp'
+import uacLogo from '../assets/clients/uac_logo.webp'
 
 const Clients = () => {
-  const featuredClients = [
-    { name: 'Super Tiendas Olímpicas', category: 'Retail' },
-    { name: 'Tecnoglass', category: 'Industrial' },
-    { name: 'Universidad del Norte', category: 'Educación' },
-    { name: 'Metro de Barranquilla', category: 'Transporte' },
-    { name: 'Postobón', category: 'Bebidas' },
-    { name: 'Procaps', category: 'Farmacéutica' }
-  ]
-
-  const otherClients = [
-    'Cajacopi', 'Colchones Spring', 'Fundación Universitaria María Cano',
-    'Fundación Tecnológica Antonio Arévalo', 'Fundación ITSA', 'Terminal de Pasajeros',
-    'Friogan', 'Industrias ESTRA', 'Propilco', 'Plastilene', 'Sanofi',
-    'Zona Franca La Cayena', 'Zona Franca del Caribe', 'Carvajal Empaques',
-    'Casa Editorial El Tiempo', 'Adidas', 'Dexter', 'Mineros S.A', 'C.I. Excelsa',
-    'Refisal', 'Corporación Minuto de Dios UNIMINUTO', 'Servientrega',
-    'Comfamiliar del Atlántico', 'Fundación CERES', 'Universidad Pontificia Bolivariana',
-    'Universidad de San Buenaventura', 'Fundación Instituto Tecnológico Comfenalco'
+  const clients = [
+    { logo: olimpicaLogo, alt: 'Olímpica' },
+    { logo: cajacapiLogo, alt: 'Cajacopi' },
+    { logo: buenaVistaLogo, alt: 'Buena Vista' },
+    { logo: combarranquillaLogo, alt: 'Combarranquilla' },
+    { logo: hotelBqLogo, alt: 'Hotel BQ Plaza' },
+    { logo: uacLogo, alt: 'UAC' }
   ]
 
   const projects = [
@@ -44,33 +39,19 @@ const Clients = () => {
       <div className="container">
         <h2>Nuestros Clientes</h2>
         <p className="clients-intro">
-          Más de 30 empresas e instituciones confían en nosotros para sus proyectos industriales
+          Empresas e instituciones que confían en nuestros servicios
         </p>
         
-        <div className="featured-clients">
-          <h3>Clientes Destacados</h3>
-          <div className="featured-grid">
-            {featuredClients.map((client, index) => (
-              <div key={index} className="featured-client">
-                <div className="client-logo">
-                  <span>{client.name.charAt(0)}</span>
-                </div>
-                <div className="client-info">
-                  <h4>{client.name}</h4>
-                  <span className="client-category">{client.category}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="other-clients">
-          <h3>Otros Clientes</h3>
-          <div className="clients-list">
-            {otherClients.map((client, index) => (
-              <span key={index} className="client-tag">{client}</span>
-            ))}
-          </div>
+        <div className="clients-grid">
+          {clients.map((client, index) => (
+            <div key={index} className="client-card">
+              <img 
+                src={client.logo} 
+                alt={client.alt}
+                className="client-logo"
+              />
+            </div>
+          ))}
         </div>
 
         <div className="projects-section">
